@@ -333,62 +333,14 @@ body::before {
     0 0 40px #ff00ff;
 }
 
-/* Scroll Container with Buttons */
-.projects-scroll-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  width: 100%;
-}
-
-/* Scroll Buttons */
-.scroll-btn {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: rgba(0, 255, 255, 0.2);
-  border: 2px solid rgba(0, 255, 255, 0.6);
-  color: #fff;
-  font-size: 2rem;
-  font-weight: bold;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
-  flex-shrink: 0;
-  z-index: 10;
-}
-
-.scroll-btn:hover {
-  background: rgba(0, 255, 255, 0.4);
-  box-shadow: 0 0 25px rgba(0, 255, 255, 0.8), 0 0 35px rgba(255, 0, 255, 0.6);
-  transform: scale(1.1);
-}
-
-.scroll-btn:active {
-  transform: scale(0.95);
-}
-
-/* Projects Grid - Horizontal Scroll */
+/* Projects Grid */
 .projects-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-behavior: smooth;
-  padding: 10px 0;
-  flex: 1;
-  
-  /* Hide scrollbar but keep functionality */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
-}
-
-.projects-grid::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1100px;
 }
 
 /* Project Card */
@@ -400,16 +352,12 @@ body::before {
   box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
-  min-width: 280px;
-  max-width: 280px;
-  flex-shrink: 0;
 }
 
 .project-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 0 16px rgba(0, 255, 255, 0.6), 0 0 24px rgba(255, 0, 255, 0.5);
 }
-
 /* Project Image */
 .project-img {
   width: 100%;
