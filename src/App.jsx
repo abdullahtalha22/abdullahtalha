@@ -246,7 +246,18 @@ export default function App() {
               </p>
             </div>
 
-            {/* Project 4: Portfolio Website */}
+            {/* Project 4: Buy Fly Shop */}
+            <div className="project-card">
+              <img src="/buyfly-shop.png" alt="Buy Fly Shop" className="project-img" />
+              <h3 className="project-title">Buy Fly Shop – E-Commerce App</h3>
+              <p className="project-date">2024</p>
+              <p className="project-desc">
+                A full-featured e-commerce application built with Flutter & Firebase, 
+                featuring product catalog, cart management, secure payments, and order tracking.
+              </p>
+            </div>
+
+            {/* Project 5: Portfolio Website */}
             <div className="project-card">
               <img src="/portfolio.png" alt="Portfolio Website" className="project-img" />
               <h3 className="project-title">Portfolio Website</h3>
